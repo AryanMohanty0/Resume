@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  color: #444;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.resume-header {
+  text-align: center;
+  border-bottom: 3px solid #42a5f5;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.resume-header h1 {
+  margin: 0;
+  color: #1e88e5;
+  font-size: 2.5em;
+}
+
+.resume-header h2 {
+  margin: 10px 0;
+  font-weight: 300;
+  color: #555;
+}
+
+.resume-header p {
+  font-size: 1em;
+  color: #666;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.contact-info a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+section h3 {
+  border-bottom: 2px solid #42a5f5;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  color: #1e88e5;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container p, ul li {
+  font-size: 1em;
+  color: #555;
+}
+
+.interests p {
+  font-style: italic;
+  background: #e3f2fd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom hover effect for sections */
+section:hover {
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
