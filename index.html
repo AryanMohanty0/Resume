@@ -3,73 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Mohanty's Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles/stylesupdated.css">
 </head>
-<body style="background-color: lightsteelblue;">
-    <div class="resume-container">
-        <header class="resume-header">
-            <h1>Aryan Mohanty</h1>
-            <h2>Computer Science Student</h2>
-            <p>Committed to mastering ML, I'm driven by a passion for data analysis. With sharp problem-solving skills, I aim to uncover insights and drive informed decisions.</p>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:mraryanmohanty@gmail.coom">mraryanmohanty@gmail.coom</a></p>
+<body>
+    <div class="container">
+        <!-- Left Panel for Tabs -->
+        <div class="left-panel">
+            <h2 class="left-title">RESUME</h2>
+            <div class="panel" data-target="education" onmouseover="showContent('education')" onclick="showContent('education')">Education</div>
+            <div class="panel" data-target="projects" onmouseover="showContent('projects')" onclick="showContent('projects')">Project Experience</div>
+            <div class="panel" data-target="skills" onmouseover="showContent('skills')" onclick="showContent('skills')">Skills</div>
+            <div class="panel" data-target="certificates" onmouseover="showContent('certificates')" onclick="showContent('certificates')">Certificates</div>
+            <div class="panel" data-target="languages" onmouseover="showContent('languages')" onclick="showContent('languages')">Languages</div>
+        </div>
+
+        <!-- Right Panel for Header and Dynamic Content -->
+        <div class="right-panel">
+            <div class="header">
+                <img src="images/1656343085416.jpg" alt="Profile Picture" class="profile-pic">
+                <h1>Aryan Mohanty</h1>
+                <p>Computer Science Student</p>
+                <p>Email: <a href="mailto:mraryanmohanty@gmail.com">mraryanmohanty@gmail.com</a></p>
                 <p>Phone: +91 6370 110 571</p>
                 <p>Address: Plot 1346, Brahmeswar Patna, Tankapani Road, Bhubaneswar, India</p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/aryan-mohanty-b7a2962b2" target="_blank">linkedin.com/in/aryan-mohanty-b7a2962b2</a></p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/aryan-mohanty-b7a2962b2">LinkedIn</a>
+                </div>
             </div>
-        </header>
 
-        <section class="education">
-            <h3>Education</h3>
-            <ul>
-                <li><strong>Bachelor in Technology, Computer Science</strong> - Kalinga Institute of Industrial Technology (2022 - 2026)</li>
-                <li><strong>Higher Secondary Education</strong> - Doon International School Bhubaneswar (2020 - 2022), AISSCE Score: 73.5%</li>
-                <li><strong>Senior Secondary Education</strong> - Delhi Public School Kalinga (2019 - 2020), CBSE Board Score: 95.8%</li>
-            </ul>
-        </section>
-
-        <section class="projects">
-            <h3>Project Experience</h3>
-            <p>Project presentation: Economics project on the topic "G-21 impacts on Indian trade and Economy"</p>
-            <p>Currently working as an intern in the team of App Development for a Stealth Startup</p>
-        </section>
-
-        <section class="skills">
-            <h3>Skills</h3>
-            <p>Numpy, Pandas, Data Structure, Java, C Language, SQL, Operating System, Ubuntu, Probability, Statistics, Machine Learning, Communication, Problem Solving, Python, Android Studio, Slack, Notion, GitHub, React Native, JavaScript, HTML, CSS, Expo CLI</p>
-        </section>
-
-        <section class="work-experience">
-            <h3>Work Experience</h3>
-            <p><strong>Internship at a Stealth Startup</strong> (05/2024 - 2026): An ongoing internship where I am learning about front-end development and implementing ML features in the company's projects.</p>
-        </section>
-
-        <section class="certificates">
-            <h3>Certificates</h3>
-            <ul>
-                <li>6-week Machine Learning Certificate of Training from Internshala</li>
-                <li>MSME Certified Training/Internship at InterPe in Java Programming</li>
-                <li>AMCAT Employability Report: English Comprehension 91%, Logical Ability 99%, C Programming 73%, Quantitative Aptitude 98%, SVAR - Spoken English 93%</li>
-                <li>Aws Academy Graduate- AWS Academy Cloud Foundations</li>
-            </ul>
-        </section>
-
-        <section class="languages">
-            <h3>Languages</h3>
-            <ul>
-                <li>English - Full Professional Proficiency</li>
-                <li>Sanskrit - Full Professional Proficiency</li>
-                <li>Hindi - Full Professional Proficiency</li>
-                <li>Odia - Full Professional Proficiency</li>
-            </ul>
-        </section>
-
-        <section class="interests">
-            <h3>Interests</h3>
-            <p>Coding, Video Editing, Filmmaking, Dance, Volunteering, Painting, Learning New Skills</p>
-        </section>
+            <!-- Dynamic Content Section -->
+            <div id="dynamic-content" class="content">
+                <h2>Introduction</h2>
+                <p>Committed to mastering MATLAB, I am driven by a passion for data analysis. With sharp problem-solving skills, I aim to uncover insights and drive informed decisions. Eager to contribute to transformative projects, I am dedicated to exploring data intricacies, unveiling patterns, and delivering value in the digital realm.</p>
+            </div>
+        </div>
     </div>
-    <script src="scripts.js"></script>
+
+    <script src="scripts/scriptupdated.js"></script>
 </body>
 </html>
